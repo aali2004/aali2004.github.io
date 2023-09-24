@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LMS Hub SE14-A</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #2f3d5d, #194231); /* Gradient background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            color: #fff; /* White text color */
+            font-size: 36px; /* Larger font size */
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 2px; /* Letter spacing */
+            margin: 0;
+        }
+        .header p {
+            color: #66ccff; /* Light blue text color */
+            font-size: 18px; /* Font size for subtitle */
+            margin: 0;
+        }
+        a {
+            color: navy; /* Light blue link color */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s; /* Smooth color transition on hover */
+        }
+        a:hover {
+            color: #ff9900; /* Orange on hover */
+        }
+        .container {
+            width: 100%; /* Use full width of the screen */
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .course-list li {
+            margin-bottom: 10px;
+        }
+        .login-link {
+            font-size: 24px; /* Larger font size */
+            font-weight: bold; /* Bold text */
+            display: block; /* Block-level element for better separation */
+            margin: 20px auto 10px auto; /* Center horizontally and adjust margin for positioning */
+            color: #ff3366; /* Odd color (pink) */
+            text-align: center; /* Center text */
+            background-color: #333; /* Dark background */
+            padding: 10px; /* Add padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+        }
+        .semester-title {
+            color: #66ccff; /* Light blue text color */
+            font-size: 18px; /* Font size for semester title */
+            text-align: center; /* Centered title */
+            margin-bottom: 20px; /* Margin below the title */
+        }
+        /* Styles for subject sections */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Two columns with equal width */
+            gap: 20px; /* Spacing between columns and rows */
+        }
+        .subject-section {
+            background-color: #fff; /* White background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+        }
+        .subject-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subject-info {
+            font-size: 16px;
+            color: #666;
+        }
+         /* Styles for the timetable table */
+        .timetable {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
+            margin: 0 auto; /* Center the table horizontally */
+        }
+        .freeslot   {
+            color: red;
+        }
+        .timetable th, .timetable td {
+            border: 5px solid black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .timetable th {
+            background-color: #66ccff;
+            color: #333;
+        }
+        .timetable-container {
+            text-align: center; /* Center align the timetable */
+            margin-top: 20px; /* Add margin at the top */
+        }
+        .break{
+            color: navajowhite;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SEECS SE 14-A</h1>
+            <p>1st Semester</p>
+        </div>
+        <a class="login-link" href="https://lms.nust.edu.pk/portal/" target="_blank">Log In to LMS</a>
+        
+        <!-- Subject sections in two columns -->
+        <div class="subject-grid">
+            <!--Calculus and Analytical Geometry-->
+            <div class="subject-section">
+                <div class="subject-name"><a href="https://lms.nust.edu.pk/portal/course/view.php?id=47782" target="_blank">MATH101 Calculus and Analytical Geometry</a></div>
+                <div class="subject-info">
+                    <p>Assignments Due: None</p>
+                    <p>Class Schedule: Monday at 11:00AM. Wednesday at 2:00PM. Thursday at 9:00AM</p>
+                    <p>Additional Info: Expected Quiz next week</p>
+                </div>
+            </div>
+
+            <!--English-->
+            <div class="subject-section">
+                <div class="subject-name"><a href="https://lms.nust.edu.pk/portal/course/view.php?id=47784" target="_blank">HU100 English</a></div>
+                <div class="subject-info">
+                    <p>Assignments Due: SUBMITTED BOOK REVIEW</p>
+                    <p>Class Schedule: Thursday at 2:00PM. Friday at 3:20PM</p>
+                    <p>Additional Info: Quiz Expected Next Week</p>
+                </div>
+            </div>
+
+            <!--Fundamentals of Computer Programming-->
+            <div class="subject-section">
+                <div class="subject-name"><a href="https://lms.nust.edu.pk/portal/course/view.php?id=47786" target="_blank">CS110 Fundamentals of Computer Programming</a></div>
+                <div class="subject-info">
+                    <p>Assignments Due: SUBMITTED Lab 01</p>
+                    <p>Class Schedule: LAB on Tuesday at 10:00AM. Wednesday and Thursday at 12:00PM. Friday at 9:00AM </p>
+                    <p>Additional Info: Quiz 1 Done</p>
+                </div>
+            </div>
+
+            <!--Applied Physics-->
+            <div class="subject-section">
+                <div class="subject-name"><a href="https://lms.nust.edu.pk/portal/course/view.php?id=47781" target="_blank">PHY102 Applied Physics</a></div>
+                <div class="subject-info">
+                    <p>Assignments Due: Lab Report Due Friday 28th September</p>
+                    <p>Class Schedule: Monday at 10:00AM. Wednesday at 11:00AM</p>
+                    <p>Additional Info: Quiz Expected next week. Polar and Cartesian System Differences</p>
+                </div>
+            </div>
+
+            <!--Pakistan Studies-->
+            <div class="subject-section">
+                <div class="subject-name"><a href="https://lms.nust.edu.pk/portal/course/view.php?id=47787" target="_blank">HU107 Pakistan Studies</a></div>
+                <div class="subject-info">
+                    <p>Assignments Due: Documentary Review Due by 3rd October</p>
+                    <p>Class Schedule: Tuesday and Thursday at 3:00 PM</p>
+                    <p>Additional Info: One Class to be rescheduled (date unannounced)</p>
+                </div>
+            </div>
+
+            <!--Discrete Mathematics-->
+            <div class="subject-section">
+                <div class="subject-name"><a href="https://lms.nust.edu.pk/portal/course/view.php?id=47783" target="_blank">MATH161 Discrete Mathematics</a></div>
+                <div class="subject-info">
+                    <p>Assignments Due: None</p>
+                    <p>Class Schedule: Tuesday at 9:00AM. Wednesday at 10:00AM. Thursday at 11:00 AM</p>
+                    <p>Additional Info: Quiz Next Week</p>
+                </div>
+            </div>
+
+            <!--Occupational Health and Safety-->
+            <div class="subject-section">
+                <div class="subject-name"><a href="https://lms.nust.edu.pk/portal/course/view.php?id=47788" target="_blank">OHS101 Occupational Health and Safety</a></div>
+                <div class="subject-info">
+                    <p>Assignments Due: None</p>
+                    <p>Class Schedule: Wednesday at 3:00 PM</p>
+                    <p>Additional Info: Quiz expected next week.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Timetable table -->
+        <div class="timetable-container">
+            <table class="timetable">
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM - 9:50 AM</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td>Discrete Mathematics</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td>Calculus and Analytical Geometry</td>
+                    <td>Fundamentals of Computer Programming</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM - 10:50 AM</td>
+                    <td>Applied Physics</td>
+                    <td bgcolor="yellow">Fundamentals of Computer Programming (LAB)</td>
+                    <td>Discrete Mathematics</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td bgcolor="yellow">Applied Physics (LAB)</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 11:50 AM</td>
+                    <td>Calculus and Analytical Geometry</td>
+                    <td bgcolor="yellow">Fundamentals of Computer Programming (LAB)</td>
+                    <td>Applied Physics</td>
+                    <td>Discrete Mathematics</td>
+                    <td bgcolor="yellow">Applied Physics (LAB)</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM - 12:50 PM</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td bgcolor="yellow">Fundamentals of Computer Programming (Lab)</td>
+                    <td>Fundamentals of Computer Programming</td>
+                    <td>Fundamentals of Computer Programming</td>
+                    <td bgcolor="yellow">Applied Physics (Lab)</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM - 1:50 PM</td>
+                    <td class="break">Lunch + Prayer Break</td>
+                    <td class="break">Lunch + Prayer Break</td>
+                    <td class="break">Lunch + Prayer Break</td>
+                    <td class="break">Lunch + Prayer Break</td>
+                    <td class="break">Lunch + Prayer Break</td>
+                </tr>
+                
+                <tr>
+                    <td>2:00 PM - 2:50 PM</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td>Calculus and Analytical Geometry</td>
+                    <td>English</td>
+                    <td class="freeslot">[Free Slot]</td>
+                </tr>
+
+                <tr>
+                    <td>3:00 PM - 3:50 PM</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td>Pakistan Studies</td>
+                    <td>Occupational Health and Safety</td>
+                    <td>Pakistan Studies</td>
+                    <td>English</td>
+                </tr>
+
+                <tr>
+                    <td>4:00 PM - 4:50 PM</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td class="freeslot">[Free Slot]</td>
+                    <td class="freeslot">[Free Slot]</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
